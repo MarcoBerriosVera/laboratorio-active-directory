@@ -7,10 +7,12 @@ Convención de nombres de capturas: `01-vm-servidor.png`, `02-instalar-ad-ds.png
 ## 1. Máquinas virtuales y red
 
 1. Descargar las ISO de evaluación desde el [Evaluation Center de Microsoft](https://www.microsoft.com/evalcenter): Windows Server y un Windows cliente.
-2. En VirtualBox crear la VM del servidor: 2 CPU, 2–4 GB de RAM, disco de 50 GB.
-3. Crear la VM del cliente: 2 CPU, 4 GB de RAM, disco de 50 GB.
+2. En VirtualBox crear la VM del servidor: 2 CPU, 2 GB de RAM, disco de 50 GB (dinámico).
+3. Crear la VM del cliente (Windows 10): 1 CPU, 2 GB de RAM, disco de 50 GB (dinámico). Windows 11 pide 4 GB, por eso uso Windows 10.
 4. En **ambas**, adaptador de red 1 → **Red interna**, con el mismo nombre (por ejemplo `labnet`).
 5. Opcional: en el servidor, un segundo adaptador en **NAT** para actualizaciones. Después se puede desactivar.
+
+> Mi equipo tiene 8 GB de RAM. Apago las otras máquinas virtuales y cierro el navegador mientras trabajo. Los pasos 2, 3 y 6 solo necesitan el servidor encendido; el cliente se enciende para los pasos 4, 5 y 7.
 
 ## 2. Servidor y dominio
 
